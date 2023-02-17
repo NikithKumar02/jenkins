@@ -17,7 +17,8 @@ pipeline {
             steps {
                 echo "Testing python file ..."
                 sh '''
-                ls -ltra
+                cd jenkins-pipeline/app
+                python3 helloworld.py
                 '''
             }
         }
