@@ -19,8 +19,9 @@ pipeline {
                 sh '''
                 cd jenkins-pipeline
                 ls -ltra
-                python3 helloworld.py\
+                python3 helloworld.py
                 cd app
+                python3 hello.py
                 ls -ltra
                 '''
             }
